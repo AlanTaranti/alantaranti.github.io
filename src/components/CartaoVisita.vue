@@ -2,7 +2,7 @@
   <v-card class="elevation-12 pa-3">
     <v-card-title>
       <v-row align="center" justify="center" no-gutters>
-        <v-col cols="4">
+        <v-col cols="4" class="d-flex justify-center">
           <v-avatar height="120" width="120">
             <v-img src="../assets/alan.jpg" />
           </v-avatar>
