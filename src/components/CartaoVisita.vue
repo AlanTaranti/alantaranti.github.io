@@ -4,7 +4,7 @@
       <v-row align="center" justify="center" no-gutters>
         <v-col cols="4" class="d-flex justify-center">
           <v-avatar height="120" width="120">
-            <v-img src="../assets/alan.jpg" />
+            <v-img :src="imagemAlan" />
           </v-avatar>
         </v-col>
       </v-row>
@@ -43,6 +43,7 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
+import { obterImagem } from "@/services/image.service";
 
 @Component
 export default class CartaoVisita extends Vue {
@@ -73,5 +74,16 @@ export default class CartaoVisita extends Vue {
       link: "https://instagram.com/alantaranti"
     }
   ];
+
+  publicPath: string = process.env.BASE_URL;
+  imagemAlan = "";
+
+  async caminhoImagem(nome: string): Promise<string> {
+    return this.publicPath + "img/" + (await obterImagem(nome));
+  }
+
+  async created() {
+    this.imagemAlan = await this.caminhoImagem("alan");
+  }
 }
 </script>

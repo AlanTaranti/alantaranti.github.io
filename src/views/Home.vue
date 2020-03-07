@@ -1,5 +1,5 @@
 <template>
-  <v-parallax class="h100" height="100%" dark src="../assets/background.jpg">
+  <v-parallax class="h100" height="100%" dark :src="imagemBackground">
     <v-container class="fill-height" fluid>
       <v-row align="center" justify="center" no-gutters>
         <v-col cols="12" sm="8" md="4">
@@ -15,13 +15,25 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 import CartaoVisita from "@/components/CartaoVisita.vue";
+import { obterImagem } from "@/services/image.service";
 
 @Component({
   components: {
     CartaoVisita
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  publicPath: string = process.env.BASE_URL;
+  imagemBackground = "";
+
+  async caminhoImagem(nome: string): Promise<string> {
+    return this.publicPath + "img/" + (await obterImagem(nome));
+  }
+
+  async created() {
+    this.imagemBackground = await this.caminhoImagem("background");
+  }
+}
 </script>
 
 <style scoped>
