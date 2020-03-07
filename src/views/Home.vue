@@ -1,13 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-  </div>
+  <v-container class="fill-height" fluid>
+    <v-row align="center" justify="center" no-gutters>
+      <v-col cols="12" sm="8" md="4">
+        <cartao-visita />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Component from "vue-class-component";
 
-export default Vue.extend({
-  name: "Home"
-});
+import CartaoVisita from "@/components/CartaoVisita.vue";
+
+@Component({
+  components: {
+    CartaoVisita
+  }
+})
+export default class Home extends Vue {}
 </script>
