@@ -17,6 +17,7 @@
         Desenvolvedor Web
       </p>
     </v-card-text>
+    <v-divider />
     <v-card-actions>
       <v-row class="mb-4" align="center" justify="center">
         <v-col class="text-center" v-for="(item, index) in botoes" :key="index">
