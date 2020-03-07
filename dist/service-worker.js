@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.460eacf5cacecee6b671ba70314a4a53.js"
+  "/precache-manifest.ff017192d30bfde8ce30b7db783822be.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "alan-taranti"});
