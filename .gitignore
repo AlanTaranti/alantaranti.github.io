@@ -1,3 +1,7 @@
+# Lighthouse report
+*.report.html
+gimbal
+
 .DS_Store
 node_modules
 /dist
