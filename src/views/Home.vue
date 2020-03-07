@@ -1,5 +1,5 @@
 <template>
-  <v-parallax class="h100" height="100%" dark :src="imagemBackground">
+  <v-parallax style="height: 100%" height="100%" dark :src="imagemBackground">
     <v-container class="fill-height" fluid>
       <v-row align="center" justify="center" no-gutters>
         <v-col cols="12" sm="8" md="4">
@@ -35,9 +35,3 @@ export default class Home extends Vue {
   }
 }
 </script>
-
-<style scoped>
-.h100 {
-  height: 100%;
-}
-</style>
