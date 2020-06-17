@@ -4,4 +4,4 @@ Olá, sou eu.
 
 Esse é meu site pessoal.
 
-Acesse-o em [alantaranti.github.io](alantaranti.github.io)
+Acesse-o em <a href="https://alantaranti.github.io" target="_blank">alantaranti.github.io</a>
