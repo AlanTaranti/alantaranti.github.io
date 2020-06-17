@@ -1,24 +1,7 @@
-# alan-taranti
+# Alan Taranti
 
-## Project setup
-```
-npm install
-```
+Olá, sou eu.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Esse é meu site pessoal.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Acesse-o em [alantaranti.github.io](alantaranti.github.io)
