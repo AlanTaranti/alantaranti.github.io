@@ -17,6 +17,9 @@ features:
 - title: LinkedIn
   icon: fab fa-linkedin-in
   link: https://www.linkedin.com/in/alan-taranti/
+- title: Twitter
+  icon: fab fa-twitter
+  link: https://twitter.com/AlanTaranti
 - title: Instagram
   icon: fab fa-instagram
   link: https://instagram.com/alantaranti
