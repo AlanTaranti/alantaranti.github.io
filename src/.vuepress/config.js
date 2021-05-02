@@ -2,6 +2,7 @@ const TITLE = "Alan Taranti";
 const URL = "https://alantaranti.github.io/";
 const IMAGE_SVG = "https://alantaranti.github.io/me_landscape.svg";
 const MIME_SVG = "image/svg+xml";
+const IMAGE_TWITTER = "https://alantaranti.github.io/me.png";
 const DESCRIPTION = "Apenas mais um Engenheiro de Dados";
 const LOCALE = 'pt-BR';
 const LOCALE_OG = LOCALE.replace('-', '_');
@@ -37,6 +38,14 @@ module.exports = {
     ["meta", { property: "og:image:type", content: MIME_SVG }],
     ["meta", { property: "og:description", content: DESCRIPTION }],
     ["meta", { property: "og:locale", content: LOCALE_OG }],
+
+    /* Twitter Card */
+    ["meta", { property: "twitter:card", content: "summary" }],
+    ["meta", { property: "twitter:site", content: "@AlanTaranti" }],
+    ["meta", { property: "twitter:title", content: TITLE }],
+    ["meta", { property: "twitter:description", content: DESCRIPTION }],
+    ["meta", { property: "twitter:image", content: IMAGE_TWITTER }],
+
 
     [
       "script",
