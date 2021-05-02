@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /me.svg
-tagline: Apenas mais um programador
+tagline: Apenas mais um Engenheiro de Dados
 actionText: Github
 actionLink: https://github.com/AlanTaranti
 features:
