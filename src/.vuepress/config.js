@@ -31,6 +31,12 @@ module.exports = {
     ]
   ],
 
+  locales: {
+    '/': {
+      lang: 'pt-BR'
+    }
+  },
+
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
