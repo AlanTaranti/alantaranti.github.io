@@ -1,7 +1,8 @@
 const TITLE = "Alan Taranti";
 const URL = "https://alantaranti.github.io/";
 const IMAGE_SVG = "https://alantaranti.github.io/me.svg";
-const IMAGE_PNG = "https://alantaranti.github.io/me.png";
+const IMAGE_LANDSCAPE = "https://alantaranti.github.io/me_landscape.svg";
+const MIME_SVG = "image/svg+xml";
 const DESCRIPTION = "Apenas mais um Engenheiro de Dados";
 const LOCALE = 'pt-BR';
 const LOCALE_OG = LOCALE.replace('-', '_');
@@ -34,9 +35,9 @@ module.exports = {
     ["meta", { property: "og:type", content: 'website' }],
     ["meta", { property: "og:url", content: URL }],
     ["meta", { property: "og:image", content: IMAGE_SVG }],
-    ["meta", { property: "og:image:type", content: 'image/svg+xml' }],
-    ["meta", { property: "og:image", content: IMAGE_PNG }],
-    ["meta", { property: "og:image:type", content: 'image/png' }],
+    ["meta", { property: "og:image:type", content: MIME_SVG }],
+    ["meta", { property: "og:image", content: IMAGE_LANDSCAPE }],
+    ["meta", { property: "og:image:type", content: MIME_SVG }],
     ["meta", { property: "og:description", content: DESCRIPTION }],
     ["meta", { property: "og:locale", content: LOCALE_OG }],
 
