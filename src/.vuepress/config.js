@@ -1,14 +1,19 @@
-const { description } = require("../../package");
+const TITLE = "Alan Taranti";
+const URL = "https://alantaranti.github.io/";
+const IMAGE = "https://alantaranti.github.io/me.svg";
+const DESCRIPTION = "Apenas mais um Engenheiro de Dados";
+const LOCALE = 'pt-BR';
+const LOCALE_OG = LOCALE.replace('-', '_');
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Alan Taranti",
+  title: TITLE,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: DESCRIPTION,
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -22,6 +27,16 @@ module.exports = {
       "meta",
       { name: "apple-mobile-web-app-status-bar-style", content: "black" }
     ],
+
+    /* Open Graph */
+    ["meta", { property: "og:title", content: TITLE }],
+    ["meta", { property: "og:type", content: 'website' }],
+    ["meta", { property: "og:url", content: URL }],
+    ["meta", { property: "og:image", content: IMAGE }],
+    ["meta", { property: "og:image:type", content: 'image/svg+xml' }],
+    ["meta", { property: "og:description", content: DESCRIPTION }],
+    ["meta", { property: "og:locale", content: LOCALE_OG }],
+
     [
       "script",
       {
@@ -33,7 +48,7 @@ module.exports = {
 
   locales: {
     '/': {
-      lang: 'pt-BR'
+      lang: LOCALE
     }
   },
 
