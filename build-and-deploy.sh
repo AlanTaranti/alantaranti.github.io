@@ -2,6 +2,7 @@
 
 git checkout develop
 npm run build
+npm run generate
 git add --all
 git commit -m "nova build"
 git push

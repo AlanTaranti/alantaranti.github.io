@@ -1,0 +1,30 @@
+// Cores
+$ghost: #f8f8ff;
+$jet: #343434;
+
+// Cores Derivadas
+$primary: #228b22;
+
+// Custom Color
+$custom-colors: (
+  "ghost": $ghost,
+);
+
+// Derivados ^2
+$body-background-color: $ghost;
+
+$text: #517394;
+$text-strong: #2c3e50;
+
+// Link
+$link: $text-strong;
+$link-hover: $primary;
+$link-hover-border: $primary;
+$link-focus: $primary;
+$link-focus-border: $primary;
+$link-active: $primary;
+$link-active-border: $primary;
+
+// Button
+$button-focus-box-shadow-color: bulmaRgba($primary, 0.25);
+$button-background-color: $body-background-color;
